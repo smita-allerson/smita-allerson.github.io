@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lora", serif;
+  background-color: #928a97;
+}
+.resume {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  width: 95%;
+}
+header {
+  background-color: #283c63;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+}
+img {
+  max-width: 80%;
+  display: block;
+  margin: 13% auto 15%;
+  border-radius: 50%;
+  box-shadow: #05080e33 0px 5px 12px;
+}
+h1,
+#majors {
+  color: #f85f73;
+  margin: 0 auto 12%;
+}
+.about-me {
+  color: #eee9e2;
+  margin: 0 10%;
+}
+p.about-me {
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.education {
+  color: #f85f73;
+}
+#college {
+  margin-bottom: 15px;
+}
+
+main {
+  background-color: #eee9e2;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 2em 0 2em 2em;
+  color: #283c63;
+}
+h2 {
+  font-size: 26px;
+}
+main h2 {
+  border-bottom: 2px solid #283c63;
+  max-width: 69%;
+}
+h3 {
+  margin-bottom: 3px;
+}
+.date {
+  float: right;
+  margin-right: 10%;
+}
+em {
+  display: block;
+}
+li {
+  max-width: 90%;
+  padding-bottom: 5px;
+}
+a {
+  color: #283c63;
+}
+i {
+  color: #f85f73;
+}
+.phone,
+.linkedin,
+.email,
+.github,
+.address {
+  display: block;
+  margin: 10px auto;
+}
+
+@media (min-width: 900px) {
+  .resume {
+    flex-direction: row;
+    min-width: 95%;
+  }
+  header {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    min-width: 29%;
+  }
+  main {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    min-width: 70%;
+  }
+  #connect {
+    margin-bottom: 10px;
+  }
+
+  .line-1,
+  .line-2 {
+    display: table;
+    table-layout: fixed;
+  }
+  .phone,
+  .email,
+  .linkedin,
+  .github {
+    display: table-cell;
+    min-width: 375px;
+    padding-top: 10px;
+  }
+}
